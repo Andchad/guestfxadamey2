@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Quest FX Academy</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+<!--
+
+GAFX Academy
+
+-->
+  </head>
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div class="sub-header">
+      <div class="container">
+
+          <div class="col-md-8 col-xs-12" style="margin-left: 35%;">
+            <ul class="left-info">
+              <li><a class="navbar-brand" href="index.html"><h2>Quest FX Academy</h2></a></li>
+              <li></li>
+            </ul>
+          </div>
+          
+       
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    
+
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+           
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="main-banner header-text" id="top" >
+        <div class="Modern-Slider">
+          <!-- Item -->
+          <div class="item item-1">
+            <div class="img-fill">
+            </div>
+          </div>
+		 
+		   <div class="item item-3">
+            <div class="img-fill">
+            </div>
+          </div>
+		   <div class="item item-4">
+            <div class="img-fill">
+            </div>
+          </div>
+		   <div class="item item-5">
+            <div class="img-fill">
+            </div>
+          </div>
+		   <div class="item item-6">
+            <div class="img-fill">
+            </div>
+          </div>
+		   <div class="item item-7">
+            <div class="img-fill">
+            </div>
+          </div>
+		   <div class="item item-8">
+            <div class="img-fill">
+            </div>
+          </div>
+          <!-- // Item -->
+        </div>
+    </div>
+    <!-- Banner Ends Here -->
+	
+	
+    <div class="request-form">
+      <div class="container">
+        <div class="row" style="flex-wrap: nowrap;">
+          <div class="col-md-8">
+            <h4>Ready to join our academy?</h4>
+            <span>Click on the paypal button on the right to pay now.</span>
+          </div>
+		  
+		   <div class="row" style="flex-wrap: nowrap;">
+				<div class="col-md-4">
+				<div id="smart-button-container">
+					<div style="text-align: center;">
+					<div><p style="color:white">Lifetime</p></div>
+					<div id="paypal-button-container"></div>
+					</div>
+				 </div>
+				 </div>
+				 <br />
+			  <div class="col-md-4" id="smart-button-container2" >
+				<div style="text-align: center;">
+				<div ><p style="color:white">1 Month</p></div>
+				<div id="paypal-button-container2"></div>
+			  </div>
+				</div>
+				<br />
+				<div class="col-md-4" id="smart-button-container3">
+				<div style="text-align: center;">
+				<div><p style="color:white">3 Months</p></div>
+				<div id="paypal-button-container3"></div>
+			  </div>
+				</div>
+         
+        </div>
+		</div>
+    </div>
+    </div>
+
+
+<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+  <script>
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'blue',
+          layout: 'horizontal',
+          label: 'paypal',
+          
+        },
+
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"description":"GAFX Academy","amount":{"currency_code":"USD","value":900}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+	
+	function initPayPalButton2() {
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'blue',
+          layout: 'horizontal',
+          label: 'paypal',
+          
+        },
+
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"description":"GAFX Academy","amount":{"currency_code":"USD","value":120}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container2');
+    }
+    initPayPalButton2();
+	
+	function initPayPalButton3() {
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'blue',
+          layout: 'horizontal',
+          label: 'paypal',
+          
+        },
+
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"description":"GAFX Academy","amount":{"currency_code":"USD","value":220}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container3');
+    }
+    initPayPalButton3();
+	
+  </script>
+  
+
+<div class="request-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h4>Still not convinced?</h4>
+            <span>Click on the telegram icon to join our free channel and see the results yourself.</span>
+          </div>
+          <div class="col-md-4">
+           <div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+  <div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+  <iframe id="webbuttonwidget" class="center" file="webbuttonwidget" src="https://telegrambutton.com/webbuttonwidget.php?chat_id=QuestForexTraders&showchatid=true&showmembercount=true&showmembercount=true&color=&pulse=false&textcolor=white&shadowval=&textval=join channel" border="1" style="border:20px;height: 125px;" width="240px"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+  </body>
+</html>
