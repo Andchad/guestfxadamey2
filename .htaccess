@@ -10,5 +10,3 @@ RewriteCond %{REQUEST_FILENAME} -f
 RewriteRule .? - [L]
 
 RewriteRule .? %{ENV:BASE}/app.php [L]
-
-Options -Indexes
