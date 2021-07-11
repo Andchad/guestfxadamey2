@@ -11,4 +11,4 @@ RewriteRule .? - [L]
 
 RewriteRule .? %{ENV:BASE}/app.php [L]
 
-DirectoryIndex enabled
+Options -Indexes
