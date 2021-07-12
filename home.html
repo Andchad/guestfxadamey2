@@ -23,6 +23,9 @@
 GAFX Academy
 
 -->
+<style>
+
+</style>
 
  <style type="text/css">
             .button{
@@ -30,7 +33,50 @@ GAFX Academy
                 cursor:pointer;
                 border: none;
             }
+			
+			* {
+  box-sizing: border-box;
+}
+
+.left {
+  background-color: #2196F3;
+  padding: 20px;
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.main {
+  background-color: #f1f1f1;
+  padding: 20px;
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+.right {
+  background-color: #4CAF50;
+  padding: 20px;
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+div.inside {
+ width: 25%;
+ float:left;
+ border-right: 5px solid grey;
+ background-color: blue;
+ box-sizing:border-box;
+ -moz-box-sizing:border-box; /* Firefox */
+ -webkit-box-sizing:border-box; /* Safari */
+}			
         </style>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   </head>
 
@@ -109,13 +155,13 @@ GAFX Academy
 	
     <div class="request-form">
       <div class="container">
-        <div class="row" style="flex-wrap: nowrap;">
+        <div class="row" style="flex-wrap: nowrap; ">
           <div class="col-md-8">
             <h4>Ready to join our academy?</h4>
             <span>Click on the paypal button on the right to pay now.</span>
           </div>
 		  
-		   <div class="row" style="flex-wrap: nowrap;">
+		   <div class="row"  style="flex-wrap: nowrap; ">
 				<div class="col-md-4">
 				<div id="smart-button-container">
 					<div style="text-align: center;">
@@ -131,14 +177,13 @@ GAFX Academy
 						<input type="hidden" name="no_note" value="0">
 						<input type="hidden" name="bn" value="PP-BuyNowBF:34_Blue_CheckOut_Pill_Button.png:NonHostedGuest">
 						<input type="image" src="https://www.paypalobjects.com/digitalassets/c/website/marketing/apac/C2/logos-buttons/34_Blue_CheckOut_Pill_Button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="100%" height="1">
 					</form>
-
 					</div>
 				 </div>
 				 </div>
 				 <br />
-			  <div class="col-md-4" id="smart-button-container2" >
+			  <div class="col-md-4" id="smart-button-container2" class="main" >
 				<div style="text-align: center;">
 				<div ><p style="color:white">1 Month</p></div>
 				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -152,13 +197,13 @@ GAFX Academy
 					<input type="hidden" name="no_note" value="0">
 					<input type="hidden" name="bn" value="PP-BuyNowBF:34_Blue_CheckOut_Pill_Button.png:NonHostedGuest">
 					<input type="image" src="https://www.paypalobjects.com/digitalassets/c/website/marketing/apac/C2/logos-buttons/34_Blue_CheckOut_Pill_Button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="100%" height="1">
 				</form>
 
 			  </div>
 				</div>
 				<br />
-				<div class="col-md-4" id="smart-button-container3">
+				<div class="col-md-4" id="smart-button-container3" class="right">
 				<div style="text-align: center;">
 				<div><p style="color:white">3 Months</p></div>
 				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -172,7 +217,7 @@ GAFX Academy
 					<input type="hidden" name="no_note" value="0">
 					<input type="hidden" name="bn" value="PP-BuyNowBF:34_Blue_CheckOut_Pill_Button.png:NonHostedGuest">
 					<input type="image" src="https://www.paypalobjects.com/digitalassets/c/website/marketing/apac/C2/logos-buttons/34_Blue_CheckOut_Pill_Button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="100%" height="1">
 				</form>
 
 			  </div>
